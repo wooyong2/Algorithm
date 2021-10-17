@@ -26,13 +26,12 @@ print(a)
 
 '''
 # 삽입 정렬 (Insertion Sort): O(N^2)  하지만 데이터가 이미 거의 정렬된 상태에서는 굉장히 효율적인 알고리즘.
-a = [1, 10, 5, 8, 7, 6, 4, 3, 2, 9]
+a = [10, 1, 5, 8, 7, 6, 4, 3, 2, 9]
 
 for i in range(9):
-    j = i
-    while(a[j] > a[j + 1]):
-        a[j], a[j + 1] = a[j + 1], a[j]
-        j -= 1
+    while a[i] > a[i + 1] and i >= 0:
+        a[i], a[i + 1] = a[i + 1], a[i]
+        i -= 1
 print(a)
 '''
 
